@@ -19,5 +19,17 @@ launchファイルを起動すれば、アルコマーカー認識ノードと�
   $ git clone https://github.com/joe-ash/marker
   $ cd ..
   $ catkin build marker
+  $ sourse devel/setup.bash 
   ```
+  
+  次にAruCoMarkerモデルを~/.gazebo/modelsに保存する
+  
+  ```shell
+  $ roscd marker/models
+  $ cp -r * ~/.gazebo/models
+  ```
+  
+  ~/.gazebo/modelsの中にmarker000~009まで入っているはず
+  
+  この状態でlaunchを立ち上げればgazebo上にAruCoMarkerを認識してくれる
   
