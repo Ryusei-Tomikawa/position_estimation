@@ -23,7 +23,7 @@ launchファイルを起動すれば、認識ノードと位置補正ノード�
   $ roslaunch seed_r7_navigation wheel_with_dummy.launch
   $ roslaunch position_estimation estimation.launch use_lauguage:=true
   ```
-ちなみに、use_launguageをfalseにするとpython版が使用できる
+ちなみに、use_lauguageをfalseにするとpython版が使用できる
 
 中身のプログラムは同様であるが、C++版はconfig/target_pose.yamlを読み込んで目標位置を決めている
 
