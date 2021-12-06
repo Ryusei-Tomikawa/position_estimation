@@ -29,7 +29,7 @@ launchファイルを起動すれば、アルコマーカー認識ノードと�
   $ cp -r * ~/.gazebo/models
   ```
   
-  ~/.gazebo/modelsの中にmarker000~009まで入っているはず
+  これにより、~/.gazebo/modelsの中にmarker000~009まで入っているはず
   
   この状態でlaunchを立ち上げればgazebo上にAruCoMarkerを認識してくれる
   
