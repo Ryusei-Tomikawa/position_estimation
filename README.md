@@ -5,6 +5,10 @@ launchファイルを起動すれば、アルコマーカー認識ノードと�
 
 位置補正の終了部分のところはてきとーかつ、cmd_velの値も適宜調整する必要あり
 
+使用すると良いプログラムは、position_estimation.cppとtest.pyである
+
+中身は言語が違うだけだからどっちを使用してもよい（訳あってC++、Python両方作成したが、どっち使おうが正直どっちゃでもよい。。。）
+
 # 使い方
 事前にseed-noidの環境構築やこのリポジトリのworldのGazebo環境の地図生成を行っておくこと.
 
@@ -19,3 +23,8 @@ launchファイルを起動すれば、アルコマーカー認識ノードと�
   $ roslaunch seed_r7_navigation wheel_with_dummy.launch
   $ roslaunch position_estimation estimation.launch use_lauguage:=true
   ```
+ちなみに、use_launguageをfalseにするとpython版が使用できる
+
+中身のプログラムは同様であるが、C++版はconfig/target_pose.yamlを読み込んで目標位置を決めている
+
+Python版は、手打ちで適当に目標位置を決め、1~3の数字を入力すると左、真ん中、右と位置補正を選択できるようになっている（やってみればわかる）
