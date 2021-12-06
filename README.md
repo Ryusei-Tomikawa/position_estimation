@@ -9,8 +9,10 @@ launchファイルを起動すれば、アルコマーカー認識ノードと�
 
 # gazeboにAruCoMarkerが使えない！？
 このリポジトリのlaunchを立ち上げてもAruCoMarker部分が真っ白であった場合以下の手順を踏む必要がある
+
 原因：~/.gazebo/modelsの中にAruCoMarkerのモデルが入っていないため
-ここのURLのリポジトリからcloneするとよい
+
+下記のURLのリポジトリからcloneするとよい
 
 [AruCoMarker Gazeboモデル](https://github.com/joe-ash/marker)
 
